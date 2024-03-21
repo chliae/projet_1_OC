@@ -27,6 +27,7 @@ header img.logo {
     padding: 30px 50px 30px 0px;
 }
 
+
 .dodo:hover {
     border-top: 1px #0065FC solid;
     color: #0065FC;
@@ -97,6 +98,16 @@ input[type="text"] {
     font-family: 'Raleway', sans-serif;
     border: 1.5px solid #F2F2F2;
     height: 47px;
+}
+
+.lieu {
+    display: flex;
+    align-items: center;
+    border: 1px #F2F2F2 solid;
+    border-right: #0065FC;
+    width: 132px;
+    height: 49px;
+    padding: 0px 25px 0px 25px;
 }
 
 .dot_loc {
@@ -215,12 +226,16 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card { 
+.card img {
+    display: flex;
     object-fit: cover;
+    width: 90%;
+    height: 124px;
+    border: 5px;
+    border-radius: 20px 20px 0px 0px;  
 }
 
 .card-hebergement .card img {
@@ -271,6 +286,7 @@ a {
     gap: 10px;
     object-fit: cover;
     margin-top: 30px;
+    justify-content: space-around;
 }
 
 .marseille {
