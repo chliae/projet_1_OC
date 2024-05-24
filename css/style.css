@@ -340,7 +340,8 @@ a {
 }
 
 .activite .card h3 {
-    padding: 5px;
+    padding: 5px 20px;
+    font-size: 1rem;
 }
 
 /****** Populaires ***********/
@@ -466,7 +467,7 @@ a {
 
     .F {
         display: flex;
-        width: 320px;
+        width: 100%;
     }
 
     .filtre {
