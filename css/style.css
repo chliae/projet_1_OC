@@ -72,7 +72,7 @@ header {
     display: flex;
     font-weight: bolder;
     align-items: center;
-    width: 377px;
+    width: 100%;
     height: 49px;
 }
 
@@ -80,7 +80,7 @@ header {
     display: flex;
     color: white;
     background-color: #0065FC;
-    width: 132px;
+    width: 100%;
     height: 49px;
     align-items: center;
     justify-content: center;
@@ -218,7 +218,6 @@ input::placeholder{
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
 }
  
@@ -402,9 +401,6 @@ a {
     gap: 15%;
 }
 
-.footer1 {
-    padding-left: 2%;
-}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -448,7 +444,9 @@ a {
 @media (max-width: 767.98px) {
     .logo {
         display: flex;
-        justify-content: center;
+        margin: auto;
+        padding-right: 0;
+        padding-left: 0;
     }
     
     .trouvez {
@@ -456,7 +454,8 @@ a {
         
     }
 
-    .header {
+    header {
+        display: flex;
         
     }
 
@@ -474,8 +473,25 @@ a {
         display: flex;
     }
 
+    .recherche span {
+        display: none;
+    }
+
+    .dot_loc {
+        width: 30%;
+    }
+
+    .recherche i {
+        display: initial;
+        width: 5%;
+    }
+
     .recherche {
-        
+        width: 60%;
+    }
+
+    .lieu {
+        flex: 1;
     }
 
     section.hebergements {
@@ -500,20 +516,22 @@ a {
         display: flex;
         background-color: white;
         flex-direction: column;
+        padding-bottom: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+
     }
 
-    .footer0 {
+    .activite .card .img {
+        height: 15px;
+    }
+
+    .carte {
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: #d9d9d9;
         display: flex;
         flex-direction: column;
-        background-color: #d9d9d9;
     }
-
-    .footer2 {
-        background-color: #d9d9d9;
-    }
-
-    .footer3 {
-        background-color: #d9d9d9;
-
-    }
-}
