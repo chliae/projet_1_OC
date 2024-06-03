@@ -91,6 +91,10 @@ header {
     font-size: 1rem
 }
 
+.recherche i {
+    display: none;
+}
+
 .lieu {
    color: black;
 }
@@ -439,7 +443,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .logo {
+    header img.logo {
         display: flex;
         margin: auto;
         padding-right: 0;
@@ -465,15 +469,35 @@ footer {
         padding: 20px 10px 0 20px;
     }
 
+    input[type="text"] {
+        margin-right: -45px;
+    }
+
     .container {
-        width: 320px;
+        width: 100%;
         display: flex;
+        gap: 0;
+    }
+
+    .container a {
+        width: 50%;
+    }
+
+    .dodo {
+        padding-left: 40px;
+    }
+
+    .act {
+        padding-left: 50px;
     }
 
     .F {
         display: flex;
         width: 100%;
-        padding-top: 20px;
+        margin: 0;
+        padding-top: 35px;
+        padding-left: 10px;
+        font-size: 20px;
     }
 
     .filtre {
@@ -481,6 +505,17 @@ footer {
         padding: 0 10px 50px 10px;
     }
 
+    .filtre a { 
+        width: 45%;
+    }
+
+    .filtre a div {
+        width: 100%;
+    } 
+
+    .personne {
+        width: 100%;
+    }
 
     .recherche span {
         display: none;
@@ -494,7 +529,7 @@ footer {
 
     .recherche {
         border-radius: 15px;
-        box-shadow: #d9d9d9 0 2px 8px 2px;
+        box-shadow: #d9d9d9 0 5px 5px 1px;
     }
 
     .lieu {
@@ -524,6 +559,21 @@ footer {
         width: 100%;
     }
 
+    .card-hebergement p {
+        margin: 0;
+        padding: 8px 0 5px 12px;
+    }
+
+    .card-hebergement h3 {
+        margin: 0;
+        padding: 8px 0 0 12px;
+    }
+
+    .card-hebergement .card-rating {
+        padding-left: 12px;
+        padding-bottom: 5px;
+    }
+
     .populaires {
         display: flex;
         flex-direction: column;
@@ -544,6 +594,10 @@ footer {
         flex-direction: column;
     }
 
+    .populaires-cards .card {
+        margin: 10px 2px 0 2px;
+    }
+    
     .populaires-cards .a {
         width: auto;
     }
@@ -568,11 +622,11 @@ footer {
     }
 
    .activite a {
-    padding-bottom: 10px;
+    padding: 0 10px 20px 10px;
    }
 
     .activite .card img {
-        height: 100px;
+        height: 150px;
     }
 
     .carte {
