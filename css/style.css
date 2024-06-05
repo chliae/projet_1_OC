@@ -409,12 +409,60 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .en_tete {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .search {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .filtre {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .F {
+        width: 100%;
+    }
+
+    .info {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    ;.card-hebergement {
+        gap: 40px;
+    }
+
+    .card-hebergement .card-title {
+        font-size: 18px;
+        margin: 10px 0 10px 10px;
+    }
+
+    .card-hebergement .card-subtitle {
+        margin: 0 0 0 10px;
+    }
+
+    .card-hebergement .card-rating {
+        margin: 3px 0 5px 10px;
     }
 
     .populaires {
@@ -439,7 +487,40 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activite {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 50px;
+    }
+
+    .act_marseille {
+        padding-top: 50px;
+    }
+
+    .activite .carte {
+        padding-top: 25px;
+    }
+
+    .activite .card img {
+        height: 170px;
+    }
+
+    footer {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 13px;
+    }
+
+    footer h2 {
+        font-size: 16px;
+    }
+
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -466,7 +547,7 @@ footer {
     }
 
     .search { 
-        padding: 20px 10px 0 20px;
+        padding: 50px 10px 0 20px;
     }
 
     input[type="text"] {
@@ -485,10 +566,29 @@ footer {
 
     .dodo {
         padding-left: 40px;
+        border-bottom: #F2F2F2 solid 2px;
+        padding-bottom: 15px;
+    }
+
+
+    .dodo:hover {
+        border-bottom: #0065FC solid 2px;
+        border-top: 0px;
     }
 
     .act {
         padding-left: 50px;
+        border-bottom: #F2F2F2 solid 2px;
+        padding-bottom: 15px;
+    }
+    
+    .act:hover {
+        border-bottom: #0065FC solid 2px;
+        border-top: 0px;
+    }
+
+    .en_tete {
+        padding-top: 25px;
     }
 
     .F {
