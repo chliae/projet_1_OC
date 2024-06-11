@@ -57,7 +57,6 @@ header {
 }
 
 .en_tete {
-    height: 53px;
     padding-bottom: 30px;
 }
 
@@ -218,9 +217,9 @@ input::placeholder{
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
+    padding: 0 50px;
 }
  
 a {
@@ -238,6 +237,7 @@ a {
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding: 5px;
+    box-sizing: border-box;
 }
 
 .card-hebergement a {
@@ -296,6 +296,10 @@ a {
     justify-content: space-around;
 }
 
+.card-hebergement .card {
+    height: 100%;
+}
+
 .marseille {
     font-weight: 700;
     font-size: 22px;
@@ -314,7 +318,7 @@ a {
 .carte img {
     width: 100%;
     border-radius: 20px 20px 0px 0px;
-    height: 340px;
+    height: 450px;
 }
 
 .activite .card {
@@ -399,9 +403,13 @@ footer {
     border: 1px solid #F2F2F2;
     background: #F2F2F2;
     margin-top: 20px;
-    gap: 15%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
+footer div {
+    width: 33%;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -409,6 +417,10 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .main-container {
+        padding: 0;
+    }
+
     header {
         padding-left: 50px;
         padding-right: 50px;
@@ -448,8 +460,8 @@ footer {
         width: 100%;
     }
 
-    ;.card-hebergement {
-        gap: 40px;
+    .card-hebergement {
+        gap: 40px 2%;
     }
 
     .card-hebergement .card-title {
@@ -509,15 +521,7 @@ footer {
     footer {
         margin-left: 50px;
         margin-right: 50px;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-size: 13px;
     }
-
-    footer h2 {
-        font-size: 16px;
-    }
-
 }
 
 
@@ -543,11 +547,11 @@ footer {
     header {
         display: flex;
         flex-direction: column;
-        
+        padding: 0;
     }
 
     .search { 
-        padding: 50px 10px 0 20px;
+        padding: 0px 10px 0 20px;
     }
 
     input[type="text"] {
@@ -562,33 +566,25 @@ footer {
 
     .container a {
         width: 50%;
+        text-align: center;
     }
 
-    .dodo {
-        padding-left: 40px;
+  
+    .container a p {
         border-bottom: #F2F2F2 solid 2px;
         padding-bottom: 15px;
     }
 
 
-    .dodo:hover {
-        border-bottom: #0065FC solid 2px;
-        border-top: 0px;
-    }
-
-    .act {
-        padding-left: 50px;
-        border-bottom: #F2F2F2 solid 2px;
-        padding-bottom: 15px;
-    }
-    
-    .act:hover {
+    .container a p:hover {
         border-bottom: #0065FC solid 2px;
         border-top: 0px;
     }
 
     .en_tete {
         padding-top: 25px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .F {
@@ -603,10 +599,11 @@ footer {
     .filtre {
         display: flex;
         padding: 0 10px 50px 10px;
+        justify-content: space-between;
     }
 
     .filtre a { 
-        width: 45%;
+        width: 47%;
     }
 
     .filtre a div {
@@ -659,18 +656,7 @@ footer {
         width: 100%;
     }
 
-    .card-hebergement p {
-        margin: 0;
-        padding: 8px 0 5px 12px;
-    }
-
-    .card-hebergement h3 {
-        margin: 0;
-        padding: 8px 0 0 12px;
-    }
-
     .card-hebergement .card-rating {
-        padding-left: 12px;
         padding-bottom: 5px;
     }
 
@@ -683,10 +669,13 @@ footer {
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .hebergements-and-populaires section {
         border-radius: 0;
+        padding: 20px;
     }
 
     .populaires-cards { 
@@ -705,6 +694,8 @@ footer {
     .card-hebergement {
         display: flex;
         flex-direction: column;
+        margin-top: 5px;
+        gap: 20px;
     }
 
     .activite {
@@ -715,6 +706,11 @@ footer {
         padding-left: 5%;
         padding-right: 5%;
 
+    }
+
+    .activite .carte {
+        padding-top: 0;
+        gap: 0;
     }
 
     .activite .act_marseille {
@@ -737,7 +733,12 @@ footer {
         background-color: #F2F2F2;
         display: flex;
         flex-direction: column;
-        padding: 0px 50px;
+        padding: 0px 25px;
+        margin: 0;
+    }
+
+    footer div {
+        width: 100%;
     }
 
 }
