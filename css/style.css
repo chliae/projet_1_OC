@@ -127,6 +127,35 @@ input::placeholder{
     border-radius: 15px 0px 0px 15px;
 }
 
+
+.fa-solid.fa-location-dot.fa-lg {
+    color: #000000;
+}
+
+.fa-solid.fa-magnifying-glass.fa-sm {
+    color: #ffffff;
+}
+
+.fa-solid.fa-money-bill-wave.fa-lg {
+    color: #0065fc;
+}
+
+.fa-solid.fa-person.fa-lg {
+    color: #0065fb;
+}
+
+.fa-solid.fa-heart.fa-lg {
+    color: #0065fc;
+}
+
+.fa-solid.fa-fire.fa-lg {
+    color: #0065fc;
+}
+
+.fa-solid.fa-info.fa-xs {
+    color: #0097fc;
+}
+
 .economie:hover {
     background-color: #DEEBFF;
 }

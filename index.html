@@ -19,16 +19,17 @@
     <div class="main-container">
         <header>
             <img class="logo" src="./images/logo_icones/Booki.png" alt="logo booki"> 
-            <div class="container">
+            <nav class="container">
                 <a href="#hebergements">
                     <p class="dodo">Hébergements</p>
                 </a>
                 <a href="#activites">
                     <p class="act">Activités</p>
                 </a>    
-            </div>            
+            </nav>            
         </header>        
         <main>
+        <section>    
             <div class="headline">
                 <div class="en_tete">
                     <p class="trouvez">Trouvez votre hébergement pour des vacances de rêve</p>
@@ -37,44 +38,44 @@
                 <form class="search" method="get" action="#">
                     <div class="dot_loc">
                         <label for="lieu">
-                            <i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i>
+                            <i class="fa-solid fa-location-dot fa-lg" id="loc"></i>
                         </label>
                     </div>  
                     <input type="text" name="lieu" id="lieu" placeholder="Marseille, France" class="lieu">
                     <button type="submit" class="recherche"> <span>Rechercher</span>
-                        <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-sm"></i>
                     </button>
                 </form>    
                 <div class="filtre">  
                     <p class="F">Filtres</p>
                     <a href="#">
                         <div class="economie">
-                            <i class="fa-solid fa-money-bill-wave fa-lg" style="color: #0065fc;"></i>
+                            <i class="fa-solid fa-money-bill-wave fa-lg"></i>
                             <p class="eco">Économique</p>
                         </div>
                     </a>
                     <a href="#">
                         <div class="personne">
-                            <i class="fa-solid fa-person fa-lg" style="color: #0065fb;"></i>
+                            <i class="fa-solid fa-person fa-lg"></i>
                             <p class="familial">Familial</p>
                         </div>
                     </a>
                     <a href="#">
                         <div class ="romance">  
-                            <i class="fa-solid fa-heart fa-lg" style="color: #0065fc;"></i>
+                            <i class="fa-solid fa-heart fa-lg"></i>
                             <p class="romantique">Romantique</p>
                         </div>  
                     </a>
                     <a href="#">
                         <div class="fire">
-                            <i class="fa-solid fa-fire fa-lg" style="color: #0065fc;"></i>                   
+                            <i class="fa-solid fa-fire fa-lg" ></i>                   
                             <p class="pepites">Nos pépites</p>
                         </div>    
                     </a>
                 </div>
                 <div class="info">
                     <div class="inf">
-                        <i class="fa-solid fa-info fa-xs" style="color: #0097fc;"></i> 
+                        <i class="fa-solid fa-info fa-xs"></i> 
                     </div>    
                     <p class="logdispo">Plus de 500 logements sont disponibles dans cette ville</p>    
                 </div>    
